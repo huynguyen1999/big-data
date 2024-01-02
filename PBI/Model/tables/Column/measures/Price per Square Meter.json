@@ -1,0 +1,9 @@
+{
+  "name": "Price per Square Meter",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

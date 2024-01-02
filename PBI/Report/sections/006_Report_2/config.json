@@ -1,0 +1,60 @@
+{
+  "relationships": [
+    {
+      "source": "ee488c17049780de1ebc",
+      "target": "baeac8d0cac491bbe03a",
+      "type": 3
+    },
+    {
+      "source": "ee488c17049780de1ebc",
+      "target": "de3db7e0b00508326d19",
+      "type": 3
+    },
+    {
+      "source": "ee488c17049780de1ebc",
+      "target": "8d4a52f0ab7b51956840",
+      "type": 3
+    },
+    {
+      "source": "6c1c1b01570e067b9cde",
+      "target": "baeac8d0cac491bbe03a",
+      "type": 3
+    },
+    {
+      "source": "6c1c1b01570e067b9cde",
+      "target": "de3db7e0b00508326d19",
+      "type": 3
+    },
+    {
+      "source": "6c1c1b01570e067b9cde",
+      "target": "8d4a52f0ab7b51956840",
+      "type": 3
+    }
+  ],
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F8F8F8'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

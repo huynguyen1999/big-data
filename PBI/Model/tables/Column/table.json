@@ -1,0 +1,18 @@
+{
+  "name": "Column",
+  "partitions": [
+    {
+      "name": "Column",
+      "mode": "import",
+      "source": {
+        "type": "calculated"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "852da1a5b33e47548458bf67dee70483"
+    }
+  ]
+}

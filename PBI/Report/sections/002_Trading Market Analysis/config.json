@@ -1,0 +1,45 @@
+{
+  "relationships": [
+    {
+      "source": "d7fc26e1a7580c0d4226",
+      "target": "d149a39794d9b2751637",
+      "type": 3
+    },
+    {
+      "source": "d7fc26e1a7580c0d4226",
+      "target": "9e4d159005dc0579b839",
+      "type": 3
+    },
+    {
+      "source": "d7fc26e1a7580c0d4226",
+      "target": "867a3b3cd3bcd83a7194",
+      "type": 3
+    }
+  ],
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#f8f8f8'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

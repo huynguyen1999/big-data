@@ -1,0 +1,9 @@
+{
+  "name": "Total Size in Month",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

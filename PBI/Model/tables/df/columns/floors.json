@@ -1,0 +1,13 @@
+{
+  "name": "floors",
+  "dataType": "int64",
+  "sourceColumn": "floors",
+  "formatString": "0",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

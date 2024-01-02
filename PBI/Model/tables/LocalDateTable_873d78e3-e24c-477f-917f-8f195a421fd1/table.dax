@@ -1,0 +1,1 @@
+Calendar(Date(Year(MIN('df'[list_time])), 1, 1), Date(Year(MAX('df'[list_time])), 12, 31))

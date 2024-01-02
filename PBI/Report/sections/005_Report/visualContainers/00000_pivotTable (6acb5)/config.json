@@ -1,0 +1,321 @@
+{
+  "name": "6acb54a704c025407315",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 183.33333333333334,
+        "y": 117,
+        "z": 0,
+        "width": 1085,
+        "height": 586,
+        "tabOrder": 0
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "pivotTable",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "Column.Summary_report"
+        }
+      ],
+      "Columns": [
+        {
+          "queryRef": "Column.Column",
+          "active": true
+        },
+        {
+          "queryRef": "Column.Metric",
+          "active": true
+        }
+      ],
+      "Rows": [
+        {
+          "queryRef": "df.area Hierarchy.area_name",
+          "active": true
+        },
+        {
+          "queryRef": "df.area Hierarchy.ward_name"
+        },
+        {
+          "queryRef": "df.area Hierarchy.street_name"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "c",
+          "Entity": "Column",
+          "Type": 0
+        },
+        {
+          "Name": "d",
+          "Entity": "df",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "c"
+              }
+            },
+            "Property": "Summary_report"
+          },
+          "Name": "Column.Summary_report",
+          "NativeReferenceName": "Summary_report"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "c"
+              }
+            },
+            "Property": "Metric"
+          },
+          "Name": "Column.Metric",
+          "NativeReferenceName": "Metric"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "c"
+              }
+            },
+            "Property": "Column"
+          },
+          "Name": "Column.Column",
+          "NativeReferenceName": " "
+        },
+        {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "d"
+                  }
+                },
+                "Hierarchy": "area Hierarchy"
+              }
+            },
+            "Level": "District"
+          },
+          "Name": "df.area Hierarchy.area_name",
+          "NativeReferenceName": "area Hierarchy area_name"
+        },
+        {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "d"
+                  }
+                },
+                "Hierarchy": "area Hierarchy"
+              }
+            },
+            "Level": "ward_name"
+          },
+          "Name": "df.area Hierarchy.ward_name",
+          "NativeReferenceName": "area Hierarchy ward_name"
+        },
+        {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "d"
+                  }
+                },
+                "Hierarchy": "area Hierarchy"
+              }
+            },
+            "Level": "street_name"
+          },
+          "Name": "df.area Hierarchy.street_name",
+          "NativeReferenceName": "area Hierarchy street_name"
+        }
+      ]
+    },
+    "columnProperties": {
+      "hcm-apartment-rent-data.area_name": {
+        "displayName": "Phân vùng"
+      },
+      "Column.Column": {
+        "displayName": " "
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rowHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTotals": [
+        {
+          "properties": {
+            "columnSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "gridHorizontal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F39C12'"
+                    }
+                  }
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridHorizontalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F39C12'"
+                    }
+                  }
+                }
+              }
+            },
+            "gridVerticalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F39C12'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F39C12'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

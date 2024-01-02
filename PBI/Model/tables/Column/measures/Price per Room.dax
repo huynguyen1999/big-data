@@ -1,0 +1,1 @@
+AVERAGEX(df, DIVIDE(df[price], (df[rooms] + df[toilets]), 0))

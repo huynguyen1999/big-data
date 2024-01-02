@@ -1,0 +1,250 @@
+{
+  "name": "d7b0c2cbe3864e80d300",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 183.33333333333334,
+        "y": 285,
+        "z": 19000,
+        "width": 1085,
+        "height": 420,
+        "tabOrder": 19000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "lineClusteredColumnComboChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "df.area Hierarchy.area_name",
+          "active": true
+        },
+        {
+          "queryRef": "df.area Hierarchy.ward_name"
+        },
+        {
+          "queryRef": "df.area Hierarchy.street_name"
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Column.Summary_report"
+        }
+      ],
+      "Y2": [
+        {
+          "queryRef": "Column.Average Price"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "d",
+          "Entity": "df",
+          "Type": 0
+        },
+        {
+          "Name": "c",
+          "Entity": "Column",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "d"
+                  }
+                },
+                "Hierarchy": "area Hierarchy"
+              }
+            },
+            "Level": "District"
+          },
+          "Name": "df.area Hierarchy.area_name",
+          "NativeReferenceName": "area Hierarchy area_name"
+        },
+        {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "d"
+                  }
+                },
+                "Hierarchy": "area Hierarchy"
+              }
+            },
+            "Level": "ward_name"
+          },
+          "Name": "df.area Hierarchy.ward_name",
+          "NativeReferenceName": "area Hierarchy ward_name"
+        },
+        {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "d"
+                  }
+                },
+                "Hierarchy": "area Hierarchy"
+              }
+            },
+            "Level": "street_name"
+          },
+          "Name": "df.area Hierarchy.street_name",
+          "NativeReferenceName": "area Hierarchy street_name"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "c"
+              }
+            },
+            "Property": "Summary_report"
+          },
+          "Name": "Column.Summary_report",
+          "NativeReferenceName": "Factor"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "c"
+              }
+            },
+            "Property": "Average Price"
+          },
+          "Name": "Column.Average Price",
+          "NativeReferenceName": "Average Price"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 1,
+          "Expression": {
+            "HierarchyLevel": {
+              "Expression": {
+                "Hierarchy": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "d"
+                    }
+                  },
+                  "Hierarchy": "area Hierarchy"
+                }
+              },
+              "Level": "District"
+            }
+          }
+        },
+        {
+          "Direction": 1,
+          "Expression": {
+            "HierarchyLevel": {
+              "Expression": {
+                "Hierarchy": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "d"
+                    }
+                  },
+                  "Hierarchy": "area Hierarchy"
+                }
+              },
+              "Level": "ward_name"
+            }
+          }
+        },
+        {
+          "Direction": 1,
+          "Expression": {
+            "HierarchyLevel": {
+              "Expression": {
+                "Hierarchy": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "d"
+                    }
+                  },
+                  "Hierarchy": "area Hierarchy"
+                }
+              },
+              "Level": "street_name"
+            }
+          }
+        }
+      ]
+    },
+    "columnProperties": {
+      "Column.Summary_report": {
+        "displayName": "Factor"
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true,
+    "vcObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F39C12'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Factor and Average Price by District'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

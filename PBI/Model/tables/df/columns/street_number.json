@@ -1,0 +1,12 @@
+{
+  "name": "street_number",
+  "dataType": "string",
+  "sourceColumn": "street_number",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

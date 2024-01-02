@@ -1,0 +1,16 @@
+{
+  "name": "price_million_per_m2",
+  "dataType": "double",
+  "sourceColumn": "price_million_per_m2",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

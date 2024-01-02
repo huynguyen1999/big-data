@@ -1,0 +1,13 @@
+{
+  "name": "toilets",
+  "dataType": "int64",
+  "sourceColumn": "toilets",
+  "formatString": "0",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

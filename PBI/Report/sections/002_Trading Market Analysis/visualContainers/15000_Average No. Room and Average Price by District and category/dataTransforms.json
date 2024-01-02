@@ -1,0 +1,205 @@
+{
+  "objects": {
+    "categoryAxis": [
+      {
+        "properties": {
+          "axisType": {
+            "expr": {
+              "Literal": {
+                "Value": "'Scalar'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "smallMultiplesLayout": [
+      {
+        "properties": {
+          "columnCount": {
+            "expr": {
+              "Literal": {
+                "Value": "1L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Y": [
+      0
+    ],
+    "Category": [
+      1
+    ],
+    "Y2": [
+      2
+    ],
+    "Rows": [
+      3
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "df.area",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Average No. Room",
+        "Name": "Column.Average No. Room",
+        "Type": 1
+      },
+      {
+        "Restatement": "area",
+        "Name": "df.area",
+        "Type": 3,
+        "Format": "0"
+      },
+      {
+        "Restatement": "Average Price",
+        "Name": "Column.Average Price",
+        "Type": 1
+      },
+      {
+        "Restatement": "category_name",
+        "Name": "df.category_name",
+        "Type": 2048
+      }
+    ],
+    "Filters": [
+      {
+        "type": 2,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "df"
+              }
+            },
+            "Property": "price"
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Y",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 1,
+          "isActive": true
+        },
+        {
+          "Name": "Y2",
+          "Projection": 2,
+          "isActive": false
+        },
+        {
+          "Name": "Rows",
+          "Projection": 3,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Average No. Room",
+      "queryName": "Column.Average No. Room",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Column"
+            }
+          },
+          "Property": "Average No. Room"
+        }
+      }
+    },
+    {
+      "displayName": "area",
+      "format": "0",
+      "queryName": "df.area",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "df"
+            }
+          },
+          "Property": "area"
+        }
+      }
+    },
+    {
+      "displayName": "Average Price",
+      "queryName": "Column.Average Price",
+      "roles": {
+        "Y2": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Column"
+            }
+          },
+          "Property": "Average Price"
+        }
+      }
+    },
+    {
+      "displayName": "category_name",
+      "queryName": "df.category_name",
+      "roles": {
+        "Rows": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "df"
+            }
+          },
+          "Property": "category_name"
+        }
+      }
+    }
+  ]
+}

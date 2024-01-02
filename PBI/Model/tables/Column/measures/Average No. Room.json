@@ -1,0 +1,9 @@
+{
+  "name": "Average No. Room",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": 0,
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU11",
+            "path": "BaseThemes/CY23SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "pty-logo-appwrapper8324937942332113.png",
+            "path": "pty-logo-appwrapper8324937942332113.png",
+            "type": 100
+          },
+          {
+            "name": "pty-logo-appwrapper3048390090497899.png",
+            "path": "pty-logo-appwrapper3048390090497899.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ]
+}

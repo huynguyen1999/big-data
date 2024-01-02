@@ -1,0 +1,9 @@
+{
+  "name": "Summary_report",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+    ("Number", "Count"), 
+    ("rooms", "Max"), 
+    ("rooms", "Min"), 
+    ("rooms", "Median"), 
+    ("rooms", "Average"), 
+    ("size", "Max"), 
+    ("size", "Min"), 
+    ("size", "Median"), 
+    ("size", "Average"), 
+    ("price", "Max"),
+    ("price", "Min"),
+    ("price", "Median"),
+    ("price", "Average")}

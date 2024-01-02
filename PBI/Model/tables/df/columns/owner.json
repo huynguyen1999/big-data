@@ -1,0 +1,12 @@
+{
+  "name": "owner",
+  "dataType": "string",
+  "sourceColumn": "owner",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

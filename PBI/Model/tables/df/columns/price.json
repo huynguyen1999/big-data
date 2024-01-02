@@ -1,0 +1,13 @@
+{
+  "name": "price",
+  "dataType": "int64",
+  "sourceColumn": "price",
+  "formatString": "0",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

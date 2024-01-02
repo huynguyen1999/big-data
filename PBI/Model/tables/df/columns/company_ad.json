@@ -1,0 +1,12 @@
+{
+  "name": "company_ad",
+  "dataType": "string",
+  "sourceColumn": "company_ad",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

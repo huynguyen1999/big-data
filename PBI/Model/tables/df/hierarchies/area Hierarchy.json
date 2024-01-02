@@ -1,0 +1,25 @@
+{
+  "name": "area Hierarchy",
+  "levels": [
+    {
+      "name": "area",
+      "ordinal": 0,
+      "column": "area"
+    },
+    {
+      "name": "District",
+      "ordinal": 1,
+      "column": "District"
+    },
+    {
+      "name": "ward_name",
+      "ordinal": 2,
+      "column": "ward_name"
+    },
+    {
+      "name": "street_name",
+      "ordinal": 3,
+      "column": "street_name"
+    }
+  ]
+}

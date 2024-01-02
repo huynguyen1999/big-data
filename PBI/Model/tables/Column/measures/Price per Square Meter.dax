@@ -1,0 +1,1 @@
+AVERAGEX(df, df[price]/df[size])

@@ -1,0 +1,143 @@
+{
+  "Commands": [
+    {
+      "SemanticQueryDataShapeCommand": {
+        "Query": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "d",
+              "Entity": "df",
+              "Type": 0
+            },
+            {
+              "Name": "c",
+              "Entity": "Column",
+              "Type": 0
+            }
+          ],
+          "Select": [
+            {
+              "HierarchyLevel": {
+                "Expression": {
+                  "Hierarchy": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "d"
+                      }
+                    },
+                    "Hierarchy": "area Hierarchy"
+                  }
+                },
+                "Level": "District"
+              },
+              "Name": "df.area Hierarchy.area_name",
+              "NativeReferenceName": "area Hierarchy area_name"
+            },
+            {
+              "HierarchyLevel": {
+                "Expression": {
+                  "Hierarchy": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "d"
+                      }
+                    },
+                    "Hierarchy": "area Hierarchy"
+                  }
+                },
+                "Level": "ward_name"
+              },
+              "Name": "df.area Hierarchy.ward_name",
+              "NativeReferenceName": "area Hierarchy ward_name"
+            },
+            {
+              "HierarchyLevel": {
+                "Expression": {
+                  "Hierarchy": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "d"
+                      }
+                    },
+                    "Hierarchy": "area Hierarchy"
+                  }
+                },
+                "Level": "street_name"
+              },
+              "Name": "df.area Hierarchy.street_name",
+              "NativeReferenceName": "area Hierarchy street_name"
+            },
+            {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "c"
+                  }
+                },
+                "Property": "Summary_report"
+              },
+              "Name": "Column.Summary_report",
+              "NativeReferenceName": "Factor"
+            },
+            {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "c"
+                  }
+                },
+                "Property": "Average Price"
+              },
+              "Name": "Column.Average Price",
+              "NativeReferenceName": "Average Price"
+            }
+          ],
+          "OrderBy": [
+            {
+              "Direction": 1,
+              "Expression": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "d"
+                        }
+                      },
+                      "Hierarchy": "area Hierarchy"
+                    }
+                  },
+                  "Level": "District"
+                }
+              }
+            }
+          ]
+        },
+        "Binding": {
+          "Primary": {
+            "Groupings": [
+              {
+                "Projections": [
+                  0,
+                  3,
+                  4
+                ]
+              }
+            ]
+          },
+          "DataReduction": {
+            "DataVolume": 4,
+            "Primary": {
+              "Window": {
+                "Count": 1000
+              }
+            }
+          },
+          "Version": 1
+        },
+        "ExecutionMetricsKind": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "latitude",
+  "dataType": "double",
+  "sourceColumn": "latitude",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

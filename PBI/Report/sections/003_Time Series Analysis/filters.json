@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Filter60c077dfd092007ee23b",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "df"
+          }
+        },
+        "Property": "District"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 1
+  },
+  {
+    "name": "Filter6f70ae1e46930c028e9d",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "df"
+          }
+        },
+        "Property": "ward_name"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 1
+  }
+]

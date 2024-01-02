@@ -1,0 +1,218 @@
+{
+  "name": "en-US",
+  "linguisticMetadata": {
+    "content": {
+      "Version": "3.5.0",
+      "Language": "en-US",
+      "DynamicImprovement": "HighConfidence",
+      "Entities": {
+        "column": {
+          "Definition": {
+            "Binding": {
+              "ConceptualEntity": "Column"
+            }
+          },
+          "State": "Generated",
+          "Terms": [
+            {
+              "column": {
+                "State": "Generated"
+              }
+            },
+            {
+              "column": {
+                "Type": "Noun",
+                "State": "Generated"
+              }
+            },
+            {
+              "pilaster": {
+                "Type": "Noun",
+                "State": "Suggested",
+                "Source": {
+                  "Agent": "Thesaurus"
+                },
+                "Weight": 0.491
+              }
+            },
+            {
+              "pier": {
+                "Type": "Noun",
+                "State": "Suggested",
+                "Source": {
+                  "Agent": "Thesaurus"
+                },
+                "Weight": 0.491
+              }
+            },
+            {
+              "pillar": {
+                "Type": "Noun",
+                "State": "Suggested",
+                "Source": {
+                  "Agent": "Thesaurus"
+                },
+                "Weight": 0.476
+              }
+            },
+            {
+              "post": {
+                "Type": "Noun",
+                "State": "Suggested",
+                "Source": {
+                  "Agent": "Thesaurus"
+                },
+                "Weight": 0.476
+              }
+            },
+            {
+              "support": {
+                "Type": "Noun",
+                "State": "Suggested",
+                "Source": {
+                  "Agent": "Thesaurus"
+                },
+                "Weight": 0.476
+              }
+            },
+            {
+              "stake": {
+                "Type": "Noun",
+                "State": "Suggested",
+                "Source": {
+                  "Agent": "Thesaurus"
+                },
+                "Weight": 0.476
+              }
+            },
+            {
+              "pole": {
+                "Type": "Noun",
+                "State": "Suggested",
+                "Source": {
+                  "Agent": "Thesaurus"
+                },
+                "Weight": 0.476
+              }
+            },
+            {
+              "buttress": {
+                "Type": "Noun",
+                "State": "Suggested",
+                "Source": {
+                  "Agent": "Thesaurus"
+                },
+                "Weight": 0.476
+              }
+            },
+            {
+              "underpinning": {
+                "Type": "Noun",
+                "State": "Suggested",
+                "Source": {
+                  "Agent": "Thesaurus"
+                },
+                "Weight": 0.476
+              }
+            },
+            {
+              "contribution": {
+                "Type": "Noun",
+                "State": "Suggested",
+                "Source": {
+                  "Agent": "Thesaurus"
+                },
+                "Weight": 0.466
+              }
+            }
+          ]
+        },
+        "column.count_number": {
+          "Definition": {
+            "Binding": {
+              "ConceptualEntity": "Column",
+              "ConceptualProperty": "Active Deal in Month"
+            }
+          },
+          "State": "Generated",
+          "Terms": [
+            {
+              "count number": {
+                "State": "Generated"
+              }
+            },
+            {
+              "count number": {
+                "Type": "Noun",
+                "State": "Generated"
+              }
+            },
+            {
+              "Count_Number": {
+                "Type": "Noun",
+                "State": "Generated",
+                "Weight": 0.99
+              }
+            },
+            {
+              "count no": {
+                "Type": "Noun",
+                "State": "Suggested",
+                "Source": {
+                  "Agent": "Thesaurus"
+                },
+                "Weight": 0.727
+              }
+            },
+            {
+              "amount number": {
+                "Type": "Noun",
+                "State": "Suggested",
+                "Source": {
+                  "Agent": "Thesaurus"
+                },
+                "Weight": 0.582
+              }
+            }
+          ]
+        }
+      },
+      "Relationships": {
+        "column_has_value": {
+          "Binding": {
+            "ConceptualEntity": "Column"
+          },
+          "State": "Generated",
+          "Roles": {
+            "column": {
+              "Target": {
+                "Entity": "column"
+              }
+            },
+            "column.value": {
+              "Target": {
+                "Entity": "column.value"
+              }
+            }
+          },
+          "Phrasings": [
+            {
+              "Attribute": {
+                "Subject": {
+                  "Role": "column"
+                },
+                "Object": {
+                  "Role": "column.value"
+                }
+              },
+              "State": "Generated",
+              "Weight": 0.99,
+              "ID": "columns_have_values"
+            }
+          ]
+        }
+      }
+    },
+    "contentType": "json"
+  }
+}

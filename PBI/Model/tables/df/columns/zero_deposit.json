@@ -1,0 +1,12 @@
+{
+  "name": "zero_deposit",
+  "dataType": "string",
+  "sourceColumn": "zero_deposit",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

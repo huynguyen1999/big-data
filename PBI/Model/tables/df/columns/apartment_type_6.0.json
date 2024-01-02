@@ -1,0 +1,12 @@
+{
+  "name": "apartment_type_6.0",
+  "dataType": "string",
+  "sourceColumn": "apartment_type_6.0",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

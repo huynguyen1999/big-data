@@ -1,0 +1,12 @@
+{
+  "name": "df",
+  "partitions": [
+    {
+      "name": "df",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ]
+}

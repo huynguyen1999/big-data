@@ -1,0 +1,63 @@
+
+VAR SelectedColumn =  SELECTEDVALUE('Column'[Column])
+VAR SelectedMetric = SELECTEDVALUE('Column'[Metric])
+RETURN
+    SWITCH (
+        TRUE,
+        SelectedColumn = "rooms" && SelectedMetric = "Max", 
+                CALCULATE ( 
+                    MAX ( df[rooms] ) ),
+        SelectedColumn = "rooms" && SelectedMetric = "Min", 
+                CALCULATE ( 
+                    MIN ( df[rooms] ) ),
+        SelectedColumn = "rooms" && SelectedMetric = "Average", 
+                CALCULATE ( 
+                    AVERAGE ( df[rooms] ) ),
+        SelectedColumn = "rooms" && SelectedMetric = "Median", 
+                CALCULATE ( 
+                    MEDIAN ( df[rooms] ) ),
+
+        SelectedColumn = "price" && SelectedMetric = "Max", 
+                CALCULATE ( 
+                    MAX ( df[price] ) ),
+        SelectedColumn = "price" && SelectedMetric = "Min", 
+                CALCULATE ( 
+                    MIN ( df[price] ) ),
+        SelectedColumn = "price" && SelectedMetric = "Average", 
+                CALCULATE ( 
+                    AVERAGE ( df[price] ) ),
+        SelectedColumn = "price" && SelectedMetric = "Median", 
+                CALCULATE ( 
+                    MEDIAN ( df[price] ) ),
+        
+        SelectedColumn = "size" && SelectedMetric = "Max", 
+                CALCULATE ( 
+                    MAX ( df[size] ) ),
+        SelectedColumn = "size" && SelectedMetric = "Min", 
+                CALCULATE ( 
+                    MIN ( df[size] ) ),
+        SelectedColumn = "size" && SelectedMetric = "Average", 
+                CALCULATE ( 
+                    AVERAGE ( df[size] ) ),
+        SelectedColumn = "size" && SelectedMetric = "Median", 
+                CALCULATE ( 
+                    MEDIAN ( df[size] ) ),
+
+        SelectedColumn = "size" && SelectedMetric = "Max", 
+                CALCULATE ( 
+                    MAX ( df[size] ) ),
+        SelectedColumn = "size" && SelectedMetric = "Min",  
+                CALCULATE ( 
+                    MIN ( df[size] ) ),
+        SelectedColumn = "size" && SelectedMetric = "Average", 
+                CALCULATE ( 
+                    AVERAGE ( df[size] ) ),
+        SelectedColumn = "size" && SelectedMetric = "Median", 
+                CALCULATE ( 
+                    MEDIAN ( df[size] ) ),
+
+        SelectedColumn = "Number", 
+                CALCULATE ( 
+                    COUNT ( df[list_id] ) ),
+        BLANK()
+    )

@@ -1,0 +1,6 @@
+CALCULATE
+(
+    COUNT(df[list_id]), 
+    YEAR(df[list_time]) = YEAR ( TODAY() )
+        && MONTH ( df[list_time] ) = MONTH ( TODAY() )
+)

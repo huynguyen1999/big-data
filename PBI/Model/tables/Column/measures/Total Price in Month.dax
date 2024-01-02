@@ -1,0 +1,6 @@
+CALCULATE
+(
+    SUM(df[price]),
+    YEAR(df[list_time]) = YEAR ( TODAY() )
+        && MONTH ( df[list_time] ) = MONTH ( TODAY() )
+)

@@ -1,0 +1,7 @@
+let
+    Source = Python.Execute("from pymongo import MongoClient#(lf)import pandas as pd#(lf)FILE_PATH = ""../data/houses-for-sale.csv""#(lf)ATLAS_URL = ""mongodb+srv://conghuynt1999:foWcElkNDeLlDNIX@cluster1.oq1l7.mongodb.net/?retryWrites=false&replicaSet=atlas-5tjaoq-shard-0""#(lf)DATABASE_NAME = ""chotot""#(lf)COLLECTION_NAME = ""real_estate_for_sell""#(lf)#(lf)db = MongoClient(ATLAS_URL)[DATABASE_NAME]#(lf)df = pd.DataFrame(db.get_collection(COLLECTION_NAME).find())#(lf)df['list_time'] = pd.to_datetime(df['list_time'], unit='ms')#(lf)df = df.drop(columns=['_id', 'subject', 'body']).drop_duplicates()#(lf)print(df)"),
+    df1 = Source{[Name="df"]}[Value],
+    #"Changed Type" = Table.TransformColumnTypes(df1,{{"list_id", Int64.Type}, {"price", Int64.Type}, {"price_million_per_m2", type number}, {"size", type number}, {"width", type number}, {"length", type number}, {"area", Int64.Type}, {"category_name", type text}, {"latitude", type number}, {"list_time", type datetime}, {"longitude", type number}, {"toilets", Int64.Type}, {"rooms", Int64.Type}, {"floors", Int64.Type}, {"ward_name", type text}, {"area_name", type text}, {"street_name", type text}, {"street_number", type text}}),
+    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"area_name", "District"}})
+in
+    #"Renamed Columns"

@@ -1,0 +1,240 @@
+{
+  "objects": {
+    "zoom": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "categoryMax": {
+            "expr": {
+              "Literal": {
+                "Value": "1D"
+              }
+            }
+          },
+          "categorySize": {
+            "expr": {
+              "Literal": {
+                "Value": "5982.368864381683D"
+              }
+            }
+          },
+          "valueMax": {
+            "expr": {
+              "Literal": {
+                "Value": "1D"
+              }
+            }
+          },
+          "valueSize": {
+            "expr": {
+              "Literal": {
+                "Value": "213738660980.69354D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "bubbles": [
+      {
+        "properties": {
+          "markerRangeType": {
+            "expr": {
+              "Literal": {
+                "Value": "'dataRange'"
+              }
+            }
+          },
+          "bubbleSize": {
+            "expr": {
+              "Literal": {
+                "Value": "-23L"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "colorBorder": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "X": [
+      0
+    ],
+    "Y": [
+      1
+    ],
+    "Size": [
+      2
+    ],
+    "Series": [
+      3
+    ]
+  },
+  "projectionActiveItems": {
+    "X": [
+      {
+        "queryRef": "df.size",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "size",
+        "Name": "df.size",
+        "Type": 1
+      },
+      {
+        "Restatement": "price",
+        "Name": "df.price",
+        "Type": 3,
+        "Format": "0"
+      },
+      {
+        "Restatement": "Active Deal",
+        "Name": "Column.Active Deal",
+        "Type": 3,
+        "Format": "0"
+      },
+      {
+        "Restatement": "category_name",
+        "Name": "df.category_name",
+        "Type": 2048
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "X",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Y",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Size",
+          "Projection": 2,
+          "isActive": false
+        },
+        {
+          "Name": "Series",
+          "Projection": 3,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "size",
+      "queryName": "df.size",
+      "roles": {
+        "X": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "df"
+            }
+          },
+          "Property": "size"
+        }
+      }
+    },
+    {
+      "displayName": "price",
+      "format": "0",
+      "queryName": "df.price",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "df"
+            }
+          },
+          "Property": "price"
+        }
+      }
+    },
+    {
+      "displayName": "Active Deal",
+      "format": "0",
+      "queryName": "Column.Active Deal",
+      "roles": {
+        "Size": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Column"
+            }
+          },
+          "Property": "Active Deal"
+        }
+      }
+    },
+    {
+      "displayName": "category_name",
+      "queryName": "df.category_name",
+      "roles": {
+        "Series": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "df"
+            }
+          },
+          "Property": "category_name"
+        }
+      }
+    }
+  ]
+}
